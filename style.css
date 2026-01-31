@@ -1,0 +1,103 @@
+/* Basic Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #005CAB;
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating {
+    animation: float 4s ease-in-out infinite;
+}
+
+/* Service Card Hover Effect */
+.service-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0, 92, 171, 0.2);
+}
+
+/* Button Hover Effects */
+.btn-hover-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-hover-effect::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    border-radius: 50%;
+}
+
+.btn-hover-effect:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Hero Section Blur Fix */
+#home::before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 40%;
+    height: 60%;
+    background: radial-gradient(circle, rgba(0, 92, 171, 0.05) 0%, transparent 70%);
+    z-index: -1;
+}
+
+/* Mobile Menu Animation */
+#mobile-menu {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+#mobile-menu.active {
+    max-height: 400px;
+    opacity: 1;
+}
+
+/* Glassmorphism utility */
+.glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}

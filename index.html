@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suresh | Tally Service & Sales Consultant - 10+ Years Experience</title>
+    <meta name="description"
+        content="Expert Tally Service & Sales Consultant with 10+ years experience. Get Tally installation, configuration, GST setup, and accounting assistance. Contact Suresh today.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tallyBlue: '#005CAB',
+                        tallyGreen: '#44A047',
+                        businessDark: '#1E293B',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-10 h-10 bg-tallyBlue rounded-lg flex items-center justify-center text-white font-heading font-bold text-xl">
+                        S</div>
+                    <span class="font-heading font-bold text-xl tracking-tight text-businessDark">SURESH</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#home" class="font-medium hover:text-tallyBlue transition-colors">Home</a>
+                    <a href="#about" class="font-medium hover:text-tallyBlue transition-colors">About</a>
+                    <a href="#services" class="font-medium hover:text-tallyBlue transition-colors">Services</a>
+                    <a href="#why-choose" class="font-medium hover:text-tallyBlue transition-colors">Why Me</a>
+                    <a href="#contact"
+                        class="bg-tallyBlue text-white px-6 py-2.5 rounded-full font-semibold hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">Contact
+                        Now</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="p-2 text-slate-600">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 py-6 space-y-4">
+            <a href="#home" class="block font-medium">Home</a>
+            <a href="#about" class="block font-medium">About</a>
+            <a href="#services" class="block font-medium">Services</a>
+            <a href="#why-choose" class="block font-medium">Why Me</a>
+            <a href="#contact"
+                class="block bg-tallyBlue text-white px-6 py-3 rounded-xl font-semibold text-center">Contact Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="absolute top-0 right-0 -z-10 w-1/2 h-full bg-gradient-to-l from-blue-50 to-transparent opacity-70">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-up">
+                    <span
+                        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100 text-tallyBlue font-semibold text-sm mb-6 uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-tallyBlue animate-pulse"></span>
+                        Trusted Tally Partner
+                    </span>
+                    <h1 class="text-5xl lg:text-7xl font-heading font-extrabold text-businessDark leading-tight mb-6">
+                        Expert Tally Solutions <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-tallyBlue to-tallyGreen">For
+                            Your Business</span>
+                    </h1>
+                    <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl">
+                        With over 10+ years of dedicated expertise, I help businesses streamline their accounting, GST,
+                        and payroll through professional Tally services and sales.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="tel:9087922551"
+                            class="flex items-center gap-2 bg-tallyBlue text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform shadow-xl shadow-blue-200">
+                            <i data-lucide="phone-call" class="w-5 h-5"></i>
+                            Call Now
+                        </a>
+                        <a href="https://wa.me/919087922551"
+                            class="flex items-center gap-2 bg-tallyGreen text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform shadow-xl shadow-green-200">
+                            <i data-lucide="message-square" class="w-5 h-5"></i>
+                            WhatsApp Me
+                        </a>
+                    </div>
+                    <div class="mt-8 flex items-center gap-4 text-slate-500 font-medium">
+                        <div class="flex -space-x-2">
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200"></div>
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300"></div>
+                            <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-400"></div>
+                        </div>
+                        <span>Joined by 500+ happy clients</span>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="assets/hero.png" alt="Professional Tally Expert Suresh" class="w-full h-auto">
+                    </div>
+                    <!-- Decorative Floating Elements -->
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl z-20" data-aos="zoom-in"
+                        data-aos-delay="200">
+                        <div class="flex items-center gap-4">
+                            <div class="p-3 bg-green-100 text-tallyGreen rounded-lg">
+                                <i data-lucide="award" class="w-8 h-8"></i>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold text-businessDark">10+</p>
+                                <p class="text-sm text-slate-500 font-medium">Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1" data-aos="fade-right">
+                    <h2 class="text-4xl font-heading font-bold text-businessDark mb-6">Empowering Businesses with <br>
+                        Seamless Accounting</h2>
+                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                        I am <strong>Suresh</strong>, a dedicated Tally Service & Sales Consultant with a passion for
+                        helping businesses achieve financial clarity and operational efficiency.
+                    </p>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Over the last decade, I have worked with diverse industries, providing end-to-end Tally
+                        solutions from software sales to complex GST configurations. My goal is to simplify your
+                        accounting processes so you can focus on growing your business.
+                    </p>
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 bg-blue-50 p-1 rounded-full text-tallyBlue">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span class="font-medium text-slate-700">Certified Tally Professional</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 bg-blue-50 p-1 rounded-full text-tallyBlue">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span class="font-medium text-slate-700">Expertise in GST Compliance</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="mt-1 bg-blue-50 p-1 rounded-full text-tallyBlue">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span class="font-medium text-slate-700">Personalized Support & Training</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-1 lg:order-2 grid grid-cols-2 gap-4" data-aos="fade-up">
+                    <div class="space-y-4">
+                        <div class="bg-blue-50 p-8 rounded-2xl text-center">
+                            <p class="text-4xl font-bold text-tallyBlue mb-2">100%</p>
+                            <p class="text-sm font-semibold text-slate-600 uppercase">Support</p>
+                        </div>
+                        <div class="bg-slate-50 p-8 rounded-2xl text-center">
+                            <p class="text-4xl font-bold text-businessDark mb-2">500+</p>
+                            <p class="text-sm font-semibold text-slate-600 uppercase">Clients</p>
+                        </div>
+                    </div>
+                    <div class="pt-8 space-y-4">
+                        <div class="bg-green-50 p-8 rounded-2xl text-center">
+                            <p class="text-4xl font-bold text-tallyGreen mb-2">10+</p>
+                            <p class="text-sm font-semibold text-slate-600 uppercase">Years</p>
+                        </div>
+                        <div class="bg-yellow-50 p-8 rounded-2xl text-center">
+                            <p class="text-4xl font-bold text-yellow-600 mb-2">24/7</p>
+                            <p class="text-sm font-semibold text-slate-600 uppercase">Service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+            <h2 class="text-4xl font-heading font-bold text-businessDark mb-4">Professional Tally Services</h2>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">Comprehensive solutions tailored to meet your business
+                accounting and GST needs.</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card group bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100"
+                    data-aos="fade-up">
+                    <div
+                        class="w-16 h-16 bg-blue-100 text-tallyBlue rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shopping-cart" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-businessDark mb-4">Tally Software Sales</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">New licenses, upgrades, and renewals for TallyPrime
+                        Silver & Gold editions at the best market prices.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card group bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-16 h-16 bg-green-100 text-tallyGreen rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="settings" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-businessDark mb-4">Installation & Config</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Professional setup, company creation, and multi-user
+                        configuration for seamless performance.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card group bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-16 h-16 bg-blue-100 text-tallyBlue rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield-check" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-businessDark mb-4">Support & Maintenance</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Annual Maintenance Contracts (AMC) and on-call
+                        support to resolve issues instantly.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card group bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100"
+                    data-aos="fade-up">
+                    <div
+                        class="w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="file-text" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-businessDark mb-4">GST Setup & Filing</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Complete GST implementation, e-invoicing setup, and
+                        assistance with GST return filing.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card group bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-16 h-16 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="users" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-businessDark mb-4">Payroll Assistance</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Employee salary structures, pay slip generation, and
+                        statutory compliance management in Tally.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card group bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-16 h-16 bg-orange-100 text-orange-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="lightbulb" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-businessDark mb-4">Data Recovery</h3>
+                    <p class="text-slate-600 leading-relaxed mb-6">Expert data migration, troubleshooting, and recovery
+                        of corrupted Tally data files.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me Section -->
+    <section id="why-choose" class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-4xl font-heading font-bold text-businessDark mb-12">Why Choose Suresh for Tally?
+                    </h2>
+
+                    <div class="space-y-10">
+                        <div class="flex gap-6">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-tallyBlue text-white rounded-full flex items-center justify-center font-bold">
+                                1</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-businessDark mb-2">Deep Technical Expertise</h4>
+                                <p class="text-slate-600">Unlike generalists, I specialize exclusively in Tally,
+                                    ensuring the highest level of proficiency in every task.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-tallyBlue text-white rounded-full flex items-center justify-center font-bold">
+                                2</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-businessDark mb-2">Quick Response Time</h4>
+                                <p class="text-slate-600">I understand that accounting can't wait. My support is prompt,
+                                    ensuring your business operations stay smooth.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-tallyBlue text-white rounded-full flex items-center justify-center font-bold">
+                                3</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-businessDark mb-2">Customized Solutions</h4>
+                                <p class="text-slate-600">Every business is unique. I tailor Tally configurations to
+                                    match your specific workflow and industry requirements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <div
+                        class="bg-gradient-to-br from-tallyBlue to-blue-700 rounded-[3rem] p-12 text-white relative z-10">
+                        <i data-lucide="quote" class="w-16 h-16 opacity-20 mb-8"></i>
+                        <p class="text-2xl font-medium leading-relaxed mb-8 italic">
+                            "Over 10 years of experience isn't just a number. It's thousand of hours spent solving
+                            complex accounting problems and helping businesses grow with Tally."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center text-3xl font-bold">
+                                S</div>
+                            <div>
+                                <p class="font-bold text-xl uppercase tracking-wider">Suresh</p>
+                                <p class="text-blue-100">Principal Consultant</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -top-10 -right-10 w-40 h-40 bg-tallyGreen/20 rounded-full blur-3xl"></div>
+                    <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-businessDark rounded-3xl p-10 lg:p-20 text-center relative overflow-hidden">
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-tallyBlue opacity-10 rounded-full -translate-y-1/2 translate-x-1/2">
+                </div>
+                <div class="relative z-10">
+                    <h2 class="text-4xl lg:text-5xl font-heading font-bold text-white mb-8">Ready to Optimize Your
+                        Accounting?</h2>
+                    <p class="text-xl text-slate-300 mb-12 max-w-2xl mx-auto leading-relaxed">
+                        Don't let software issues slow you down. Get expert Tally support and consulting today.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                        <a href="tel:9087922551"
+                            class="flex items-center justify-center gap-3 bg-white text-businessDark px-10 py-5 rounded-2xl font-bold text-lg hover:bg-slate-100 transition-colors">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                            Call +91 90879 22551
+                        </a>
+                        <a href="https://wa.me/919087922551"
+                            class="flex items-center justify-center gap-3 bg-tallyGreen text-white px-10 py-5 rounded-2xl font-bold text-lg hover:scale-105 transition-transform">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i>
+                            WhatsApp Inquiries
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-900 pt-20 pb-10 text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 lg:col-span-2">
+                    <div class="flex items-center gap-2 mb-8">
+                        <div
+                            class="w-10 h-10 bg-tallyBlue rounded-lg flex items-center justify-center text-white font-heading font-bold text-xl">
+                            S</div>
+                        <span class="font-heading font-bold text-2xl tracking-tight text-white">SURESH</span>
+                    </div>
+                    <p class="text-lg leading-relaxed mb-8 max-w-md">
+                        Trusted Tally Service & Sales Consultant providing expert solutions for software installation,
+                        GST setup, and accounting Maintenance.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-tallyBlue hover:text-white transition-all">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-tallyBlue hover:text-white transition-all">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center hover:bg-tallyBlue hover:text-white transition-all">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-8 uppercase tracking-widest">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#home" class="hover:text-tallyBlue transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-tallyBlue transition-colors">About Me</a></li>
+                        <li><a href="#services" class="hover:text-tallyBlue transition-colors">Our Services</a></li>
+                        <li><a href="#why-choose" class="hover:text-tallyBlue transition-colors">Why Choose Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-8 uppercase tracking-widest">Contact Info</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-tallyBlue"></i>
+                            <span>90879 22551</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-tallyBlue"></i>
+                            <span>contact@sureshtally.com</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-tallyBlue"></i>
+                            <span>Available Across Tamil Nadu</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-slate-800 text-center text-sm">
+                <p>&copy; 2026 Suresh Tally Consultant. All rights reserved. | Professional Tally Sales & Support</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919087922551"
+        class="fixed bottom-8 right-8 z-[100] bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform md:hidden"
+        title="Chat on WhatsApp">
+        <i data-lucide="message-circle" class="w-8 h-8 text-white"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out-quad'
+        });
+    </script>
+</body>
+
+</html>
