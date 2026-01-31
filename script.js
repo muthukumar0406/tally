@@ -1,5 +1,7 @@
 // Initialize Lucide Icons
-lucide.createIcons();
+document.addEventListener('DOMContentLoaded', () => {
+    lucide.createIcons();
+});
 
 // Mobile Menu Toggle
 const menuBtn = document.getElementById('menu-btn');
@@ -8,7 +10,7 @@ const mobileMenu = document.getElementById('mobile-menu');
 menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
     mobileMenu.classList.toggle('active');
-    
+
     // Toggle menu icon
     const icon = menuBtn.querySelector('i');
     if (mobileMenu.classList.contains('active')) {
